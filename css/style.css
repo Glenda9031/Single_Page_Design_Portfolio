@@ -1,11 +1,268 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+/* Box sizing rates */
 *,
 *::before,
 *::after {
     box-sizing: border-box; 
 }
 
-body {
-    
+/* CSS Reset */
+body,
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+figure, 
+blockquote,
+dl,
+dd {
+   margin: 0; 
 }
+
+ul[role="lists"],
+ol[role="lists"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: #fff7f0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    } 
+}
+
+main {
+    margin: 0 auto;
+}
+
+header,
+footer,
+.hero,
+.skills,
+.profile,
+.work,
+.contact {
+    margin-inline: 1rem;
+    max-width: 21.4375rem;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff7f0;
+    padding: 0.5rem 1.6875rem;
+}
+
+.btn-header,
+.btn-footer {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff7f0;
+    padding: 0.5rem 1.6875rem;
+    background: #030303;
+    border-radius: 1.75rem;
+}
+
+.btn-header:focus,
+.btn-footer:focus {
+    background: #755cde;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.835rem;
+    color: #030303;
+    margin-top: 2rem;
+}
+
+.hero p {
+    font-weight: 500;
+    line-height: 1.625rem;
+    color: #7A746E;
+    margin-top: 1rem;
+}
+
+.skill {
+    position: relative;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+}
+
+article img {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.title {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.89rem;
+    color: #fff;
+}
+
+.skill-one {
+    background: #755cde;
+    height: 22.75rem;
+    width: 21.4375rem;
+}
+
+.skill-two {
+    background: #f6a560;
+    height: 11.375rem;
+    width: 9.9375rem;
+}
+
+.skill-three {
+    background: #f39e9e;
+    height: 9.9375rem;
+    width: 11.375rem;
+}
+
+.skill-four {
+    background: #eb7565;
+    height: 21.4375rem;
+    width: 9.875rem;
+}
+
+.skill-five {
+    background: #61c4b7;
+    height: 21.4375rem;
+    width: 11.375rem;
+}
+
+.skill-six {
+    background: #552049;
+    height: 21.4375rem;
+    width: 11.375rem;
+}
+
+.inner-skills {
+    display: flex;
+    gap: 1.5625rem;
+}
+
+.profile {
+    margin-top: 6.25rem;
+}
+
+.amy-image {
+    width: 18.75rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-info {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: #030303;
+}
+
+.profile-info p {
+    margin-block: 2rem;
+    font-weight: 500;
+    color: #7A746E;
+}
+
+.btn-profile,
+.btn-contact {
+    background: #eb7565;
+}
+
+.btn-profile:hover,
+.btn-contact:hover {
+    background: #f6a560;
+}
+
+.work {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.carousel {
+    max-width: 16.875rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+@media (min-width: 48rem) {
+
+}
+
+@media (min-width: 75rem) {
+
+}
+
